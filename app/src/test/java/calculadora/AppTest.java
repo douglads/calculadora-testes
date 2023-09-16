@@ -3,12 +3,46 @@
  */
 package calculadora;
 
-import org.junit.jupiter.api.Test;
+import calculadora.Divisao.Divisao;
+import calculadora.Multiplicacao.Multiplicacao;
+import calculadora.Soma.Soma;
+import calculadora.Subtracao.Subtracao;
+
 import static org.junit.jupiter.api.Assertions.*;
 
-// class AppTest {
-//     @Test void appHasAGreeting() {
-//         App classUnderTest = new App();
-//         assertNotNull(classUnderTest.getGreeting(), "app should have a greeting");
-//     }
-// }
+import org.junit.jupiter.api.Test;
+
+class AppTest {
+    Divisao divisao = new Divisao();
+    Subtracao subtracao = new Subtracao();
+    Multiplicacao multiplicacao = new Multiplicacao();
+    Soma soma = new Soma();
+    @Test
+    public void DividirDoisNumeros() {
+        assertEquals(-1, divisao.divisao(1,-1));
+        assertEquals(1, divisao.divisao(2, 2));
+        assertEquals(0, divisao.divisao(2, 3));
+        assertEquals(1, divisao.divisao(2147483647, 2147483647));
+    }
+    @Test
+    public void SubtrairDoisNumeros() {
+        assertEquals(2, subtracao.subtracao(1,-1));
+        assertEquals(0, subtracao.subtracao(2, 2));
+        assertEquals(-1, subtracao.subtracao(2, 3));
+        assertEquals(0, subtracao.subtracao(999999999, 999999999));
+    }
+    @Test
+    public void MultiplicarDoisNumeros() {
+        assertEquals(0, multiplicacao.multiplicacao(5,0));
+        assertEquals(-1, multiplicacao.multiplicacao(1, -1));
+        assertEquals(4, multiplicacao.multiplicacao(2, 2));
+        assertEquals(808348673, multiplicacao.multiplicacao(999999999, 999999999));
+    }
+    @Test
+    public void SomarDoisNumeros() {
+        assertEquals(0, multiplicacao.multiplicacao(0,0));
+        assertEquals(-1, multiplicacao.multiplicacao(1, -1));
+        assertEquals(4, multiplicacao.multiplicacao(2, 2));
+        assertEquals(808348673, multiplicacao.multiplicacao(999999999, 999999999));
+    }
+}

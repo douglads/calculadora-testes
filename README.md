@@ -4,5 +4,6 @@ O projeto de calculadora foi desenvolvido no vs code utilizado java jdk 17 e con
 
 ## Mecânicas
 Ao rodar o software java ele executa os códigos no console e retorna seu valores.
+Também foram criados testes unitários com a biblioteca junit, ao executar testes ele retorna testa como é a funcionalidade das classes criadas que realizam as 4 operações matemáticas.
 
 ## Última atualização 16/09/23
