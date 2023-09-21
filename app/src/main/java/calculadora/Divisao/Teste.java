@@ -18,5 +18,6 @@ public class Teste {
         System.out.println(d.divisao(2, 2));
         System.out.println(d.divisao(2, 3));
         System.out.println(d.divisao(2147483647, 2147483647));
+#        System.out.println(d.divisao(2147483647, 0));
     }
 }
