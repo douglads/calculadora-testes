@@ -17,5 +17,6 @@ public class Teste {
         System.out.println(s.subtracao(2, 2));
         System.out.println(s.subtracao(2, 3));
         System.out.println(s.subtracao(999999999, 999999999));
+       // System.out.println(s.subtracao(-999999999, 999999999)); aqui podemos ter um problema pois o número negativo é muito maior que o inteiro
     }
 }
