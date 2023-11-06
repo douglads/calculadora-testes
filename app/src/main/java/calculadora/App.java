@@ -4,6 +4,13 @@
 package calculadora;
 
 public class App {
+    
+    /** 
+     * @author Douglas Machado
+     * @version 1.2
+     * @since Realease 1.0 da aplicação
+     * @param args
+     */
     public static void main(String[] args) {
         calculadora.Soma.Teste soma = new calculadora.Soma.Teste();
         soma.teste();

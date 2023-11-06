@@ -1,0 +1,1 @@
+packageSearchIndex = [{"l":"All Packages","u":"allpackages-index.html"},{"l":"calculadora"},{"l":"calculadora.Divisao"},{"l":"calculadora.Multiplicacao"},{"l":"calculadora.Soma"},{"l":"calculadora.Subtracao"}];updateSearchResults();
